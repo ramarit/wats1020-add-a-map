@@ -2,7 +2,95 @@
    Author's custom styles
    ========================================================================== */
 
-#map-container { height: 180px; }
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #edeeef;
+}
+
+.text-center {
+  text-align: center;
+}
+
+nav ul {
+  text-align: right;
+  margin: 0;
+  line-height: 75px;
+}
+
+.navbar-toggle{
+z-index: 10;
+}
+
+.navbar-brand {
+  position: absolute;
+  left: 50%;
+  margin-left: -50px !important;  
+  display: block;
+
+}
+
+.navbar-nav.nav-justified > li{
+  float:none;
+}
+
+
+#map-container { height: 400px; }
+
+.jumbotron {
+  background-color: #edeeef;
+  font-family: 'Montserrat', sans-serif;
+
+  padding-top: 100px;
+}
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.img-full {
+  object-fit: cover;
+  width: 100%;
+  max-height: 600px;
+  object-position: 50% 50%;
+}
+
+.home {
+  display: block;
+  margin: auto;
+}
+
+blockquote {
+  border: none;
+}
+
+
+.tab-content h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #e87a30;
+}
+
+dt {
+  font-weight: bold;
+  text-decoration: underline;
+  }
+dd {
+  margin: 0;
+  padding: 0 0 0.5em 0;
+  }
+ul {
+  list-style-type: none;
+        list-style-position:inside;
+        margin:0;
+        padding:0;
+}  
+
 
 
 

@@ -1,3 +1,4 @@
+
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
@@ -10,7 +11,9 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Sansita+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <style>
             body {
@@ -28,7 +31,7 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
@@ -37,18 +40,18 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Mt. Rainier Info</a>
+          <a class="navbar-center navbar-brand" href="#home"><object data="img/rainier.svg" class="logo" alt="rainier logo" type="image/svg+xml"></object></a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#home">Home</a></li>
+          <ul class="nav navbar-nav nav-justified">
+            <li><a href="#home">Home</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#description">Description</a></li>
-                <li><a href="#history">History</a></li>
-                <li><a href="#stats">Stats</a></li>
+                <li><a href="#about">Description</a></li>
+                <li><a href="#about">History</a></li>
+                <li><a href="#about">Stats</a></li>
               </ul>
             </li>
             <li><a href="#map">Map</a></li>
@@ -58,17 +61,65 @@
       </div>
     </nav>
 
+
+
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1 id="home">Mt. Ranier Information</h1>
+        <div id="home" class="text-center"><object data="img/rainier_large.svg" class="logo" alt="rainier logo" type="image/svg+xml"></object></div>
         <!-- TODO: Create an HTML structure that will trigger the Bootstrap
                    carousel feature. http://getbootstrap.com/javascript/#carousel
-
                    Bonus points if you go to the trouble of making nice captions
                    for the images. If you are using the Mt. Rainier images, then
                    there are readymade captions available from the Wikipedia
                    source page. -->
+      
+        <div id="carousel-image" class="carousel slide">
+          <!-- Indicators -->
+          <ol class="carousel-indicators hidden-xs">
+            <li data-target="#carousel-image" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-image" data-slide-to="1"></li>
+            <li data-target="#carousel-image" data-slide-to="2"></li>
+            <li data-target="#carousel-image" data-slide-to="3"></li>
+            <li data-target="#carousel-image" data-slide-to="4"></li>
+            <li data-target="#carousel-image" data-slide-to="5"></li>
+            <li data-target="#carousel-image" data-slide-to="6"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active images">
+              <img class="img-responsive img-full" src="img/carousel/Mount_Rainier_sunset_and_clouds.jpg" alt="">
+            </div>
+            <div class="item images">
+              <img class="img-responsive img-full" src="img/carousel/Flickr_-_The_U.S._Army_-_Jump_over_Mt._Rainier.jpg" alt="">
+            </div>
+            <div class="item images">
+              <img class="img-responsive img-full" src="img/carousel/Mount_Rainier_-_Paradise_-_Dead_Horse_Creek_Trail_-_August_2014_-_01.jpg" alt="">
+            </div>
+            <div class="item images">
+              <img class="img-responsive img-full" src="img/carousel/Mount_Rainier_-_Paradise_Meadow_in_July_03.jpg" alt="">
+            </div>
+            <div class="item images">
+              <img class="img-responsive img-full" src="img/carousel/Mount_Rainier_and_lake_reflection.jpg" alt="">
+            </div>
+            <div class="item images">
+              <img class="img-responsive img-full" src="img/carousel/Mount_Rainier_from_Paradise_meadow,_August_2014_-_03.jpg" alt="">
+            </div>
+            <div class="item images">
+              <img class="img-responsive img-full" src="img/carousel/Nisqually_River_near_Cougar_Rock_01.jpg" alt="">
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-image" data-slide="prev">
+            <span class="icon-prev"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-image" data-slide="next">
+            <span class="icon-next"></span>
+          </a>
+        </div>
+
       </div>
     </div>
 
@@ -78,54 +129,69 @@
         <br>
         &mdash; John Muir, Naturalist
       </blockquote>
+
+
       <div id="about" role="tabpanel">
       <!-- Create the HTML structure to trigger the Bootstrap tabs feature:
             http://getbootstrap.com/javascript/#tabs
-
             You will need to add HTML structure to show each of the divs below
             as a unique tab. -->
 
-        <div id="description">
-          <h2>About</h2>
-          <p>Mount Rainier (pronounced: <b>/reɪˈnɪər/</b>) is the highest mountain of the Cascade Range of the Pacific Northwest, and the highest mountain in the state of Washington. It is a large active stratovolcano located 54 miles (87 km) southeast of Seattle. It is the most topographically prominent mountain in the contiguous United States and the Cascade Volcanic Arc, with a summit elevation of 14,411 ft (4,392 m).[1][2] Mt. Rainier is considered one of the most dangerous volcanoes in the world, and it is on the Decade Volcano list. Because of its large amount of glacial ice, Mt. Rainier could potentially produce massive lahars that could threaten the entire Puyallup River valley.</p>
-        </div>
-        <div id="history">
-          <h2>History</h2>
-          <p>At the time of European contact, the river valleys and other areas near the mountain were inhabited by many Pacific Northwest tribes who hunted and gathered berries in its forests and mountain meadows. These included the Nisqually, Cowlitz, Yakama, Puyallup, and Muckleshoot.</p>
+        <ul class="nav nav-tabs">
+          <li class="active"><a data-toggle="tab" href="#description">About</a></li>
+          <li><a data-toggle="tab" href="#history">History</a></li>
+          <li><a data-toggle="tab" href="#stats">Stats</a></li>
+        </ul>    
+        
+        <div class="tab-content">
+          <div id="description" class="tab-pane fade in active">
+            <h2>About</h2>
+            <p>Mount Rainier (pronounced: <b>/reɪˈnɪər/</b>) is the highest mountain of the Cascade Range of the Pacific Northwest, and the highest mountain in the state of Washington. It is a large active stratovolcano located 54 miles (87 km) southeast of Seattle. It is the most topographically prominent mountain in the contiguous United States and the Cascade Volcanic Arc, with a summit elevation of 14,411 ft (4,392 m).[1][2] Mt. Rainier is considered one of the most dangerous volcanoes in the world, and it is on the Decade Volcano list. Because of its large amount of glacial ice, Mt. Rainier could potentially produce massive lahars that could threaten the entire Puyallup River valley.</p>
+          </div> <!-- #description -->
+          <div id="history" class="tab-pane fade">
+            <h2>History</h2>
+            <p>At the time of European contact, the river valleys and other areas near the mountain were inhabited by many Pacific Northwest tribes who hunted and gathered berries in its forests and mountain meadows. These included the Nisqually, Cowlitz, Yakama, Puyallup, and Muckleshoot.</p>
 
-          <p>Captain George Vancouver reached Puget Sound in early May 1792 and became the first European to see the mountain.</p>
+            <p>Captain George Vancouver reached Puget Sound in early May 1792 and became the first European to see the mountain.</p>
 
-          <p>In 1833, Dr. William Fraser Tolmie explored the area looking for medicinal plants. Hazard Stevens and P. B. Van Trump received a hero's welcome in the streets of Olympia after their successful summit climb in 1870. The first female ascent was made in 1890 by Fay Fuller, accompanied by Van Trump and three other teammates.</p>
+            <p>In 1833, Dr. William Fraser Tolmie explored the area looking for medicinal plants. Hazard Stevens and P. B. Van Trump received a hero's welcome in the streets of Olympia after their successful summit climb in 1870. The first female ascent was made in 1890 by Fay Fuller, accompanied by Van Trump and three other teammates.</p>
 
-          <p>John Muir climbed Mount Rainier in 1888, and although he enjoyed the view, he conceded that it was best appreciated from below. Muir was one of many who advocated protecting the mountain. In 1893, the area was set aside as part of the Pacific Forest Reserve in order to protect its physical/economic resources: timber and watersheds.</p>
+            <p>John Muir climbed Mount Rainier in 1888, and although he enjoyed the view, he conceded that it was best appreciated from below. Muir was one of many who advocated protecting the mountain. In 1893, the area was set aside as part of the Pacific Forest Reserve in order to protect its physical/economic resources: timber and watersheds.</p>
 
-          <p>Citing the need to also protect scenery and provide for public enjoyment, railroads and local businesses urged the creation of a national park in hopes of increased tourism. On March 2, 1899, President William McKinley established Mount Rainier National Park as America's fifth national park. Congress dedicated the new park "for the benefit and enjoyment of the people" and "... for the preservation from injury or spoliation of all timber, mineral deposits, natural curiosities, or wonders within said park, and their retention in their natural condition."</p>
-        </div>
-        <div id="stats">
-          <!-- TODO: Use CSS to enhance the look of these statistics. Feel free to
+            <p>Citing the need to also protect scenery and provide for public enjoyment, railroads and local businesses urged the creation of a national park in hopes of increased tourism. On March 2, 1899, President William McKinley established Mount Rainier National Park as America's fifth national park. Congress dedicated the new park "for the benefit and enjoyment of the people" and "... for the preservation from injury or spoliation of all timber, mineral deposits, natural curiosities, or wonders within said park, and their retention in their natural condition."</p>
+          </div> <!-- #history -->
+
+
+          <div id="stats" class="tab-pane fade">
+            <!-- TODO: Use CSS to enhance the look of these statistics. Feel free to
                       enhance the HTML if you need to. -->
-          <h2>Statistics</h2>
-          <dl>
-            <dt>Elevation</dt>
-            <dd>14,411 ft (4,392 m)</dd>
-            <dt>Prominence</dt>
-            <dd>13,211 ft (4,027 m)</dd>
-            <dt>Range</dt>
-            <dd>Cascade Range</dd>
-            <dt>Type</dt>
-            <dd>Stratovolcano</dd>
-            <dt>Age of Rock</dt>
-            <dd>500,000 years</dd>
-            <dt>Last Eruption</dt>
-            <dd>November to December, 1894</dd>
-            <dt>First Ascent</dt>
-            <dd>1870 by Hazard Stevens and P. B. Van Trump</dd>
-            <dt>Easiest Route</dt>
-            <dd>Rock/ice climb via Disappointment Cleaver</dd>
-          </dl>
-        </div>
+            <h2>Statistics</h2>
+            <dl>
+              <dt>Elevation</dt>
+              <dd>14,411 ft (4,392 m)</dd>
+              <dt>Prominence</dt>
+              <dd>13,211 ft (4,027 m)</dd>
+              <dt>Range</dt>
+              <dd>Cascade Range</dd>
+              <dt>Type</dt>
+              <dd>Stratovolcano</dd>
+              <dt>Age of Rock</dt>
+              <dd>500,000 years</dd>
+              <dt>Last Eruption</dt>
+              <dd>November to December, 1894</dd>
+              <dt>First Ascent</dt>
+              <dd>1870 by Hazard Stevens and P. B. Van Trump</dd>
+              <dt>Easiest Route</dt>
+              <dd>Rock/ice climb via Disappointment Cleaver</dd>
+            </dl>
+          </div> <!-- #stats -->
 
-      </div>
+
+        </div> <!-- .tab-content -- >
+      </div> <!-- #about -->
+      
+
+
 
       <div id="map">
         <h2>Map</h2>
@@ -148,7 +214,7 @@
       <hr>
 
       <footer>
-        <p>Made by Jane Student in 2015. This page uses images and text from <a href="http://en.wikipedia.org/wiki/Mount_Rainier">The Wikipedia Mt. Rainier Page</a>.</p>
+        <p>Made by Ryan Amarit 2017. This page uses images and text from <a href="http://en.wikipedia.org/wiki/Mount_Rainier">The Wikipedia Mt. Rainier Page</a>.</p>
       </footer>
     </div> <!-- /container -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

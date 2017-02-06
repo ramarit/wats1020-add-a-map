@@ -28,13 +28,11 @@ z-index: 10;
   left: 50%;
   margin-left: -50px !important;  
   display: block;
-
 }
 
 .navbar-nav.nav-justified > li{
   float:none;
 }
-
 
 #map-container { height: 400px; }
 
